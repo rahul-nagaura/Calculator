@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    overflow: hidden;
+    /* background-color:  rgb(23, 22, 22); */
+    background-color:#252F52;
+}
+ 
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(210, 210, 226);
+    margin: 1rem;
+    font-family: sans-serif;
+}
+
+.boxes {
+    border: 2px solid black;
+    /* height: 75vh;
+    width: 26vw; */
+    height: 595px;
+    width: 400px;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: rgb(23, 22, 22);
+    /* background-color: black; */
+    border: none;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap: 0.4rem;
+    padding: 1rem;
+    /* border-radius: 1%; */
+    /* background-color: black; */
+}
+
+.box {
+    /* border: 2px solid black; */
+    border: none;
+    background-color: rgb(23, 22, 22);
+    /* background-color:  black; */
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 5px 6px 20px 0px black;
+}
+
+.box-mix {
+    /* width: 160px; */
+    /* margin: 3rem; */
+}
+
+.msg {
+    height: 15vh;
+    border: 2px solid black;
+    width: 90%;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #252F52;
+}
+
+.operator {
+    color: #8D8943;
+    background-color: #05243C;
+    color: white;
+
+}
+
+.blue {
+    background-color: #0561A5;
+    color: white;
+}
+
+.top-3 {
+    color: #0561A5;
+}
+
+
+@media screen and (max-width: 500px){
+    .box{
+        height: 70px;
+        width: 70px;
+        font-size: 1.8rem;
+    }
+    .msg{
+        height: 13vh;
+        font-size: 1.8rem;
+    }
+    .boxes{
+        margin-top: 4rem;
+    }
+    .heading{
+        margin: 1rem;
+        /* color: black; */
+    }
+    .box-grid{
+        gap: 0.6rem;
+        row-gap: 1rem;
+    }
+}
